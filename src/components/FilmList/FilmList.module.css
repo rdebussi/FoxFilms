@@ -1,0 +1,10 @@
+.films {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+ h2 {
+    padding-block: 2rem;
+    color: rgb(255, 102, 0);
+}

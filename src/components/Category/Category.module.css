@@ -1,0 +1,19 @@
+.category {
+    display: flex;
+    flex-direction: column;
+}
+
+.category div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.category h2{
+    padding-block: 1.5rem;
+    text-align: start;
+    margin-left: 5%;
+    text-shadow: 2px 2px 4px rgb(255, 153, 0);
+}
