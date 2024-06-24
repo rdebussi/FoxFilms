@@ -3,7 +3,8 @@ import films from "../../json/db.json"
 
 export const categories = [
     "horror",
-    "fantasy"
+    "fantasy",
+    "a24"
   ]
   
  export function filterCategory(id){

@@ -11,10 +11,10 @@ function Header() {
                 <Link to="/">
                     Home
                 </Link>
-                <Link to="/watch">
-                    Watch
+                <Link to="/favorites">
+                    Favorites
                 </Link>
-                <Link to="/Search">
+                <Link to="/search">
                     Search
                 </Link>
             </nav>

@@ -1,9 +1,40 @@
 .card {
     display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
-.card img {
+.thumb {
     border-radius: 8px;
     width: 275px;
-    height: 150px;
 }
+
+.thumb:hover {
+    transform: scale(1.15);
+    transition: .5 ease-in-out;
+    box-shadow: 0 0 10px #222;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    background-color: #00000050;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.icon:hover {
+    transform: scale(1.15);
+    cursor: pointer;
+    background-color: #c0c0c050
+
+}
+
+.icon img{
+    width: 25px;
+    height: 25px;
+} 

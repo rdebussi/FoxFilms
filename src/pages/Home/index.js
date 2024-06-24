@@ -1,5 +1,6 @@
 import Banner from "../../components/Banner";
 import Card from "../../components/Card";
+import Carousel from "../../components/Carousel";
 import Category, { categories, filterCategory } from "../../components/Category";
 import Container from "../../components/Container";
 import Footer from "../../components/Footer";
@@ -17,9 +18,11 @@ function Home() {
           {
             categories.map((category, index) => 
               <Category category={category}>
-                { 
-                  filterCategory(index).map(film => <Card id={film.id} key={film.id}/>)
-                }
+                <Carousel>
+                  { 
+                    filterCategory(index).map(film => <Card id={film.id} key={film.id}/>)
+                  }
+                </Carousel>
               </Category>
             )
           }
