@@ -3,3 +3,10 @@
     color: #f57b51;
     font-size: 1.5rem;
 }
+
+@media (max-width: 1024px){
+    .slick-prev:before, 
+    .slick-next:before {
+        display: none;
+    }
+}

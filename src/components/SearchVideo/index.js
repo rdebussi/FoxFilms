@@ -1,6 +1,7 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import FilmList from "../FilmList"
 import styles from "./SearchVideo.module.css"
+import Loader from "../Loader"
 
 //filtrando filmes por categoria ou titulo
 function filterFilms(films, searchText){
@@ -13,6 +14,11 @@ function SearchVideo({ films }) {
     const [ searchText, setSearchText ] = useState("")
     const foundFilms = filterFilms(films, searchText)
 
+    const [ loading, setLoading ] = useState(true)
+    useEffect(() => {
+        setTimeout(() => setLoading(false), 500)
+    }, [])
+
     return (
         <>
             <section className={styles.container}>
@@ -22,10 +28,13 @@ function SearchVideo({ films }) {
                     value={searchText}
                     onChange={e => setSearchText(e.target.value)}
                 />
+            { 
+                loading ? <Loader /> : 
                 <FilmList 
                     films={foundFilms}
                     emptyHeading={`'${searchText}' not founded!`}
                 />
+            }
             </section>
         </>
     )

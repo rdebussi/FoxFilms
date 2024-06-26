@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+    justify-content: center;
 }
 
  h2 {
@@ -9,3 +10,9 @@
     /* color: rgb(255, 102, 0); */
     color: white;
 }
+
+/* @media (max-width: 1024px) {
+    .films {
+        justify-content: center;
+    }
+} */
